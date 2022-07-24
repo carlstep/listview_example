@@ -3,9 +3,76 @@ import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   var widgets = [
-    Text('Payment'),
-    Text('Change'),
-    ListTile(),
+    //Text('Payment'),
+    //Text('Change'),
+    ListTile(
+      leading: Text(
+        '£',
+        style: GoogleFonts.robotoMono(
+          fontSize: 40,
+          fontWeight: FontWeight.w500,
+          color: Colors.red[600],
+        ),
+      ),
+      title: Text(
+        'Payment',
+        style: GoogleFonts.robotoMono(
+          fontSize: 20,
+          fontWeight: FontWeight.w200,
+          color: Colors.blue[600],
+        ),
+      ),
+      subtitle: Text(
+        'Change',
+        style: GoogleFonts.robotoMono(
+          fontSize: 20,
+          fontWeight: FontWeight.w200,
+          color: Colors.green[600],
+        ),
+      ),
+      trailing: Text(
+        '£22000.00',
+        style: GoogleFonts.robotoMono(
+          fontSize: 30,
+          fontWeight: FontWeight.w400,
+          color: Colors.green[600],
+        ),
+      ),
+    ),
+    ListTile(
+      leading: Text(
+        '\$',
+        style: GoogleFonts.robotoMono(
+          fontSize: 40,
+          fontWeight: FontWeight.w500,
+          color: Colors.red[600],
+        ),
+      ),
+      title: Text(
+        'Payment',
+        style: GoogleFonts.robotoMono(
+          fontSize: 20,
+          fontWeight: FontWeight.w200,
+          color: Colors.blue[600],
+        ),
+      ),
+      subtitle: Text(
+        'Change',
+        style: GoogleFonts.robotoMono(
+          fontSize: 20,
+          fontWeight: FontWeight.w200,
+          color: Colors.green[600],
+        ),
+      ),
+      trailing: Text(
+        '\$1000.00',
+        style: GoogleFonts.robotoMono(
+          fontSize: 30,
+          fontWeight: FontWeight.w400,
+          color: Colors.green[600],
+        ),
+      ),
+    ),
   ];
 
   runApp(MaterialApp(

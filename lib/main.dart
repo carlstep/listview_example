@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -10,7 +11,16 @@ void main() {
         children: [
           Container(
             height: 400,
-            child: ListView(),
+            child: ListView(
+              children: [
+                Text('Payment',
+                    style: GoogleFonts.poppins(
+                      fontSize: 40,
+                      fontWeight: FontWeight.w600,
+                      color: Colors.red[600],
+                    )),
+              ],
+            ),
           ),
         ],
       ),

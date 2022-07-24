@@ -2,6 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 void main() {
+  var widgets = [
+    Text('Payment'),
+    Text('Change'),
+    ListTile(),
+  ];
+
   runApp(MaterialApp(
     home: Scaffold(
       appBar: AppBar(
@@ -24,80 +30,13 @@ void main() {
             height: 30,
           ),
           Container(
-            height: 300,
-            child: ListView(
-              //scrollDirection: Axis.horizontal,
-              padding: EdgeInsets.fromLTRB(10, 20, 10, 20),
-              children: [
-                Text(
-                  'Payment',
-                  style: GoogleFonts.poppins(
-                    fontSize: 40,
-                    fontWeight: FontWeight.w600,
-                    color: Colors.red[600],
-                  ),
-                ),
-                SizedBox(
-                  height: 20,
-                ),
-                Text(
-                  'Change',
-                  style: GoogleFonts.poppins(
-                    fontSize: 40,
-                    fontWeight: FontWeight.w600,
-                    color: Colors.blue[600],
-                  ),
-                ),
-                SizedBox(
-                  height: 20,
-                ),
-                Text(
-                  'Exchange',
-                  style: GoogleFonts.poppins(
-                    fontSize: 40,
-                    fontWeight: FontWeight.w600,
-                    color: Colors.green[600],
-                  ),
-                ),
-                SizedBox(
-                  height: 20,
-                ),
-                Text(
-                  'Payment',
-                  style: GoogleFonts.poppins(
-                    fontSize: 40,
-                    fontWeight: FontWeight.w600,
-                    color: Colors.red[600],
-                  ),
-                ),
-                SizedBox(
-                  height: 20,
-                ),
-                Text(
-                  'Change',
-                  style: GoogleFonts.poppins(
-                    fontSize: 40,
-                    fontWeight: FontWeight.w600,
-                    color: Colors.blue[600],
-                  ),
-                ),
-                SizedBox(
-                  height: 20,
-                ),
-                Text(
-                  'Exchange',
-                  style: GoogleFonts.poppins(
-                    fontSize: 40,
-                    fontWeight: FontWeight.w600,
-                    color: Colors.green[600],
-                  ),
-                ),
-                SizedBox(
-                  height: 40,
-                ),
-              ],
-            ),
-          ),
+              height: 300,
+              child: ListView.builder(
+                itemCount: widgets.length,
+                itemBuilder: (context, index) {
+                  return widgets[index];
+                },
+              )),
           SizedBox(
             height: 40,
           ),

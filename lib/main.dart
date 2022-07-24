@@ -6,6 +6,7 @@ void main() {
     //Text('Payment'),
     //Text('Change'),
     ListTile(
+      tileColor: Colors.amber,
       leading: Text(
         '£',
         style: GoogleFonts.robotoMono(
@@ -99,6 +100,7 @@ void main() {
           Container(
               height: 300,
               child: ListView.builder(
+                padding: EdgeInsets.all(8),
                 itemCount: widgets.length,
                 itemBuilder: (context, index) {
                   return widgets[index];

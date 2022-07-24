@@ -6,6 +6,14 @@ void main() {
       appBar: AppBar(
         title: Text('ListView in Flutter'),
       ),
+      body: Column(
+        children: [
+          Container(
+            height: 400,
+            child: ListView(),
+          ),
+        ],
+      ),
     ),
   ));
 }
